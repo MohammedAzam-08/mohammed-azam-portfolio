@@ -1,0 +1,52 @@
+GitHub Copilot
+I'll guide you through deploying your React portfolio project to Netlify. Here are the step-by-step instructions:
+
+Method 1: Deploy via Git (Recommended)
+Step 1: Prepare Your Project
+First, make sure your project is ready for deployment. Let me check if you have a build script in your package.json:
+
+Read package.json, lines 1 to 37
+
+Perfect! Your project is a Vite-based React app with the correct build script. Now let's set it up for deployment:
+
+Step 2: Push to GitHub (if not already done)
+Initialize Git (if not already done):
+Create a GitHub repository:
+
+Go to GitHub.com
+Click "New repository"
+Name it: mohammed-azam-portfolio
+Make it public
+Don't initialize with README (since you already have files)
+Push to GitHub:
+
+Step 3: Deploy to Netlify
+Go to Netlify:
+
+Visit netlify.com
+Sign up/Login (you can use your GitHub account)
+Import from Git:
+
+Click "Add new site" → "Import an existing project"
+Choose "Deploy with GitHub"
+Authorize Netlify to access your GitHub
+Select your mohammed-azam-portfolio repository
+Configure Build Settings:
+
+Branch to deploy: main
+Build command: npm run build
+Publish directory: dist
+Click "Deploy site"
+Step 4: Configure Custom Domain (Optional)
+After deployment:
+
+Go to Site settings → Domain management
+Click "Add custom domain"
+Enter your domain (e.g., mohammedazam.dev)
+DNS Configuration:
+
+Add these DNS records at your domain provider:
+Method 2: Manual Drag & Drop Deploy
+If you prefer a quick test deployment:
+
+Step 1: Build the Project
