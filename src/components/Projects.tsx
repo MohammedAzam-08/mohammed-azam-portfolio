@@ -11,6 +11,22 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      title: "Human Pose Estimation System",
+      description: "A Machine Learning project developed during internship using TensorFlow and OpenCV for real-time human pose detection and analysis. Achieved 92% accuracy in pose estimation with optimized model performance for image processing applications.",
+      features: [
+        "Real-time human pose detection using TensorFlow",
+        "Computer vision implementation with OpenCV",
+        "92% model accuracy with optimized performance",
+        "Processed 10K+ images for training and validation"
+      ],
+      technologies: ["Python", "TensorFlow", "OpenCV", "NumPy", "Pandas", "Matplotlib"],
+      icon: <Sparkles className="text-purple-600" size={24} />,
+      color: "purple",
+      gradient: "from-purple-500 to-pink-500",
+      githubUrl: "https://github.com/MohammedAzam-08/Human-Pose-Estimation",
+      liveUrl: ""
+    },
+    {
       title: "EduMate – Course Management System",
       description: "A comprehensive MERN stack platform for online learning with user authentication, instructor dashboard, and student progress tracking. Improved engagement through dynamic course modules and real-time data visualization using Chart.js.",
       features: [
@@ -124,7 +140,7 @@ const Projects: React.FC = () => {
               transition={{ duration: 1, delay: 0.5 }}
             />
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Here are some of my recent projects that showcase my skills in full-stack development and modern web technologies.
+              Here are some of my recent projects that showcase my skills in AI/ML, full-stack development, and modern web technologies.
             </p>
           </motion.div>
 

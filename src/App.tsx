@@ -99,7 +99,7 @@ function App() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
                 >
-                  IT Professional & Full Stack Developer
+                  IT Professional
                 </motion.p>
 
                 {/* Enhanced Loading Spinner */}

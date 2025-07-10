@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                Full Stack Developer
+                
               </motion.span>
             </motion.h1>
             
@@ -156,7 +156,7 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              Full-Stack Developer and Automation Tester with practical experience in{' '}
+              Full-Stack Developer and AI/ML Enthusiast with practical experience in{' '}
               <motion.span
                 className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
                 whileHover={{ scale: 1.05 }}
@@ -164,7 +164,7 @@ const Hero: React.FC = () => {
               >
                 MERN stack applications
               </motion.span>
-              , REST APIs, and Selenium-based testing frameworks. Seeking challenging roles in backend development using Java or full-stack technologies.
+              , Machine Learning, and automation testing. Specialized in Computer Vision projects using TensorFlow and OpenCV, with hands-on experience in building intelligent web applications.
             </motion.p>
 
             {/* Tech Stack Badges */}
@@ -183,7 +183,7 @@ const Hero: React.FC = () => {
                 Tech Stack
               </motion.h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3">
-                {['JavaScript', 'React.js', 'Node.js', 'Python', 'MongoDB', 'MySQL', 'Selenium', 'TestNG'].map((tech, index) => (
+                {['JavaScript', 'React.js', 'Node.js', 'Python', 'TensorFlow', 'OpenCV', 'MongoDB', 'MySQL'].map((tech, index) => (
                   <motion.span
                     key={tech}
                     className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-xs sm:text-sm font-medium border border-gray-200 dark:border-gray-700 text-center shadow-sm hover:shadow-md transition-all duration-300"

@@ -39,10 +39,10 @@ const About: React.FC = () => {
   };
 
   const stats = [
-    { number: "2+", label: "Years Experience", icon: Award, color: "from-blue-500 to-blue-600" },
-    { number: "8+", label: "Technologies", icon: Code, color: "from-purple-500 to-purple-600" },
-    { number: "3+", label: "Major Projects", icon: Target, color: "from-green-500 to-green-600" },
-    { number: "100+", label: "Test Cases Created", icon: TestTube, color: "from-orange-500 to-orange-600" },
+    { number: "3+", label: "Years Experience", icon: Award, color: "from-blue-500 to-blue-600" },
+    { number: "92%", label: "ML Model Accuracy", icon: Code, color: "from-purple-500 to-purple-600" },
+    { number: "10K+", label: "Images Processed", icon: Target, color: "from-green-500 to-green-600" },
+    { number: "50+", label: "Test Cases Created", icon: TestTube, color: "from-orange-500 to-orange-600" },
   ];
 
   const skills = [
@@ -129,7 +129,14 @@ const About: React.FC = () => {
                 animate={inView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                Full-Stack Developer and Automation Tester with practical experience in{' '}
+                MCA Graduate and experienced Full-Stack Developer with a strong passion for{' '}
+                <motion.span
+                  className="font-semibold text-purple-600 dark:text-purple-400"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  AI & Machine Learning
+                </motion.span>
+                . Practical expertise in{' '}
                 <motion.span
                   className="font-semibold text-blue-600 dark:text-blue-400"
                   whileHover={{ scale: 1.05 }}
@@ -137,7 +144,7 @@ const About: React.FC = () => {
                   MERN stack applications
                 </motion.span>
                 , REST APIs, and Selenium-based testing frameworks. Skilled in backend systems and passionate about 
-                creating high-performance, scalable, and secure web applications.
+                creating intelligent, scalable, and secure web applications.
               </motion.p>
               <motion.p
                 className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
@@ -145,9 +152,16 @@ const About: React.FC = () => {
                 animate={inView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Currently pursuing MCA with strong focus on backend development using Java and full-stack technologies. 
-                Experience includes developing RESTful APIs, automation testing with Selenium, and building responsive 
-                web applications that improve user engagement and performance.
+                Recently completed MCA with{' '}
+                <motion.span
+                  className="font-semibold text-green-600 dark:text-green-400"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  ML internship experience in Human Pose Estimation
+                </motion.span>
+                {' '}using TensorFlow and OpenCV, achieving 92% model accuracy. Ready to take on challenging roles in 
+                AI/ML, Software Development, and Testing, with hands-on experience in building intelligent systems, 
+                RESTful APIs, and automation testing frameworks.
               </motion.p>
             </div>
           </motion.div>
@@ -174,7 +188,8 @@ const About: React.FC = () => {
               </motion.div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 Expertise in full-stack development using modern technologies like React.js, Node.js, 
-                and MongoDB to build scalable web applications with exceptional user experiences.
+                and MongoDB. Specialized in building AI/ML-powered web applications with computer vision 
+                capabilities, implementing intelligent solutions using TensorFlow and OpenCV.
               </p>
             </motion.div>
 
@@ -236,7 +251,7 @@ const About: React.FC = () => {
                     Master of Computer Applications (MCA)
                   </h4>
                   <p className="text-blue-600 dark:text-blue-400 font-medium mb-1">Yenepoya University</p>
-                  <p className="text-gray-600 dark:text-gray-300">2023 – 2025 | CGPA: 8.6/10</p>
+                  <p className="text-gray-600 dark:text-gray-300">2023 – 2025 (Completed) | CGPA: 8.6/10</p>
                 </motion.div>
                 <motion.div
                   className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg"
