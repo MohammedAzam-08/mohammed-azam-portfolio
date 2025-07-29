@@ -49,3 +49,63 @@ git clone https://github.com/MohammedAzam-08/mohammed-azam-portfolio.git
 cd mohammed-azam-portfolio
 npm install
 npm run dev
+💡 This project uses Vite for fast builds and hot module replacement.
+
+🧪 Testing & Validation
+Although automated testing is not yet integrated, the application has been:
+
+✅ Manually tested on major browsers (Chrome, Firefox, Edge)
+
+✅ Verified across screen resolutions and mobile responsiveness
+
+✅ Form tested using real-time EmailJS delivery and validation checks
+
+📸 Visual Preview (Screenshots)
+Homepage View	Project Section
+
+📷 Replace these placeholders with actual screenshots from your site to increase visual appeal.
+
+🗂️ Folder Structure
+php
+Copy
+Edit
+├── public/
+├── src/
+│   ├── assets/           # Images, icons
+│   ├── components/       # Reusable React components
+│   ├── pages/            # Portfolio sections (Home, Projects, Contact)
+│   ├── utils/            # Configuration and helper functions
+├── emailjs-example.ts    # EmailJS integration setup
+├── tailwind.config.js
+├── vite.config.ts
+├── package.json
+✅ Git Commit Practices
+🔄 Uses semantic commit messages (e.g., feat:, fix:, chore:)
+
+📌 Each commit reflects atomic, meaningful changes for better collaboration and version control
+
+🔄 Roadmap
+Future enhancements planned:
+
+ Dark Mode Toggle
+
+ Blog Section Integration (Markdown or CMS)
+
+ Accessibility Improvements (WCAG compliance)
+
+🧑‍💻 Author Info
+Mohammed Azam
+📍 Bengaluru, India
+📧 Email: mdazam2722001@gmail.com
+🔗 Portfolio | LinkedIn | GitHub
+
+⭐ Feedback and Contributions
+If you found this project helpful or visually appealing, feel free to:
+
+⭐ Star the repository
+
+📬 Connect with me on LinkedIn
+
+🔀 Fork or contribute improvements
+
+"Building impactful digital experiences through clean code and modern web technologies."
