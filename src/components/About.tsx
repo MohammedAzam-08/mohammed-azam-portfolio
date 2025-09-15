@@ -38,19 +38,23 @@ const About: React.FC = () => {
     },
   };
 
-  const stats = [
-    { number: "3+", label: "Years Experience", icon: Award, color: "from-blue-500 to-blue-600" },
-    { number: "92%", label: "ML Model Accuracy", icon: Code, color: "from-purple-500 to-purple-600" },
-    { number: "10K+", label: "Images Processed", icon: Target, color: "from-green-500 to-green-600" },
-    { number: "50+", label: "Test Cases Created", icon: TestTube, color: "from-orange-500 to-orange-600" },
-  ];
+ const stats = [
+  { number: "1+", label: "Years Experience", icon: Award, color: "from-blue-500 to-blue-600" },
+  { number: "92%", label: "ML Model Accuracy", icon: Code, color: "from-purple-500 to-purple-600" },
+  { number: "10K+", label: "Images Processed", icon: Target, color: "from-green-500 to-green-600" },
+  { number: "50+", label: "Test Cases Created", icon: TestTube, color: "from-orange-500 to-orange-600" },
+  { number: "30+", label: "Automated Scripts", icon: Briefcase, color: "from-red-500 to-red-600" },
+];
 
-  const skills = [
-    { name: "Frontend Development", level: 90, icon: Code },
-    { name: "Backend Development", level: 85, icon: Database },
-    { name: "Database Design", level: 80, icon: TestTube },
-    { name: "Team Collaboration", level: 95, icon: Users },
-  ];
+const skills = [
+  { name: "Manual Testing", level: 95, icon: TestTube },
+  { name: "Automation Testing", level: 90, icon: Code },
+  { name: "Frontend Development (React.js)", level: 85, icon: Code },
+  { name: "Backend Development (Node.js & SQL)", level: 80, icon: Database },
+  { name: "AI/ML Development", level: 88, icon: Target },
+  { name: "Team Collaboration & Agile", level: 95, icon: Users },
+];
+
 
   return (
     <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800 relative overflow-hidden">
@@ -122,102 +126,91 @@ const About: React.FC = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="mb-12">
-            <div className="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl">
-              <motion.p
-                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
-                initial={{ opacity: 0 }}
-                animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-              >
-                MCA Graduate and experienced Full-Stack Developer with a strong passion for{' '}
-                <motion.span
-                  className="font-semibold text-purple-600 dark:text-purple-400"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  AI & Machine Learning
-                </motion.span>
-                . Practical expertise in{' '}
-                <motion.span
-                  className="font-semibold text-blue-600 dark:text-blue-400"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  MERN stack applications
-                </motion.span>
-                , REST APIs, and Selenium-based testing frameworks. Skilled in backend systems and passionate about 
-                creating intelligent, scalable, and secure web applications.
-              </motion.p>
-              <motion.p
-                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-                initial={{ opacity: 0 }}
-                animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-              >
-                Recently completed MCA with{' '}
-                <motion.span
-                  className="font-semibold text-green-600 dark:text-green-400"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  ML internship experience in Human Pose Estimation
-                </motion.span>
-                {' '}using TensorFlow and OpenCV, achieving 92% model accuracy. Ready to take on challenging roles in 
-                AI/ML, Software Development, and Testing, with hands-on experience in building intelligent systems, 
-                RESTful APIs, and automation testing frameworks.
-              </motion.p>
-            </div>
-          </motion.div>
+  <div className="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl">
+    <motion.p
+      className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
+      initial={{ opacity: 0 }}
+      animate={inView ? { opacity: 1 } : { opacity: 0 }}
+      transition={{ duration: 0.8, delay: 0.3 }}
+    >
+      MCA Graduate and <span className="font-semibold text-blue-600 dark:text-blue-400">Software Engineer </span> 
+      with strong expertise in <span className="font-semibold text-purple-600 dark:text-purple-400">automation testing frameworks </span> 
+      like Selenium, TestNG, BDD, and API testing using Postman. Skilled in Agile SDLC/STLC processes, regression, smoke, and UAT cycles, 
+      ensuring high-quality software releases. Experienced in integrating automated tests into 
+      <span className="font-semibold text-green-600 dark:text-green-400"> CI/CD pipelines</span> with Jenkins and Git workflows.
+    </motion.p>
+    <motion.p
+      className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+      initial={{ opacity: 0 }}
+      animate={inView ? { opacity: 1 } : { opacity: 0 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
+    >
+      Completed MCA with hands-on <span className="font-semibold text-purple-600 dark:text-purple-400">ML internship in Human Pose Estimation</span>, 
+      achieving 92% model accuracy. Passionate about taking on challenging roles in <span className="font-semibold text-blue-600 dark:text-blue-400">
+      Software Testing, QA Automation,</span> and <span className="font-semibold text-green-600 dark:text-green-400">AI/ML</span> development, 
+      with practical experience in building intelligent systems, REST APIs, and robust automation frameworks.
+    </motion.p>
+  </div>
+</motion.div>
+
 
           <motion.div variants={itemVariants} className="grid md:grid-cols-2 gap-8 mb-12">
-            <motion.div
-              variants={cardVariants}
-              className="group bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
-              whileHover={{ y: -5 }}
-            >
-              <motion.div
-                className="flex items-center mb-6"
-                whileHover={{ x: 10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <motion.div
-                  className="p-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-4"
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <Code className="text-white" size={24} />
-                </motion.div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Development</h3>
-              </motion.div>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Expertise in full-stack development using modern technologies like React.js, Node.js, 
-                and MongoDB. Specialized in building AI/ML-powered web applications with computer vision 
-                capabilities, implementing intelligent solutions using TensorFlow and OpenCV.
-              </p>
-            </motion.div>
+  {/* Development & AI Card */}
+  <motion.div
+    variants={cardVariants}
+    className="group bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
+    whileHover={{ y: -5 }}
+  >
+    <motion.div
+      className="flex items-center mb-6"
+      whileHover={{ x: 10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <motion.div
+        className="p-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mr-4"
+        whileHover={{ rotate: 360 }}
+        transition={{ duration: 0.6 }}
+      >
+        <Code className="text-white" size={24} />
+      </motion.div>
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Development & AI</h3>
+    </motion.div>
+    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+      Skilled in full-stack development using <span className="font-semibold text-blue-600 dark:text-blue-400">React.js, Node.js, MongoDB</span>, 
+      with hands-on experience in <span className="font-semibold text-purple-600 dark:text-purple-400">AI/ML-powered applications</span> 
+      and computer vision projects. Implemented intelligent solutions using TensorFlow and OpenCV, building scalable and data-driven web apps.
+    </p>
+  </motion.div>
 
-            <motion.div
-              variants={cardVariants}
-              className="group bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
-              whileHover={{ y: -5 }}
-            >
-              <motion.div
-                className="flex items-center mb-6"
-                whileHover={{ x: 10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <motion.div
-                  className="p-3 bg-gradient-to-r from-green-500 to-green-600 rounded-lg mr-4"
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <TestTube className="text-white" size={24} />
-                </motion.div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Testing</h3>
-              </motion.div>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Proficient in both manual and automated testing using Selenium WebDriver, 
-                TestNG, and modern testing frameworks to ensure robust, bug-free applications.
-              </p>
-            </motion.div>
-          </motion.div>
+  {/* Software Testing & QA Card */}
+  <motion.div
+    variants={cardVariants}
+    className="group bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
+    whileHover={{ y: -5 }}
+  >
+    <motion.div
+      className="flex items-center mb-6"
+      whileHover={{ x: 10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <motion.div
+        className="p-3 bg-gradient-to-r from-green-500 to-green-600 rounded-lg mr-4"
+        whileHover={{ rotate: 360 }}
+        transition={{ duration: 0.6 }}
+      >
+        <TestTube className="text-white" size={24} />
+      </motion.div>
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Software Testing & QA</h3>
+    </motion.div>
+    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+      Proficient in <span className="font-semibold text-green-600 dark:text-green-400">manual and automated testing</span> using 
+      Selenium WebDriver, TestNG, and BDD frameworks. Experienced in API testing with Postman, regression, smoke, and UAT cycles, 
+      and integrating automated tests into <span className="font-semibold text-blue-600 dark:text-blue-400">CI/CD pipelines</span> 
+      to ensure robust, high-quality software releases.
+    </p>
+  </motion.div>
+</motion.div>
+
 
           <motion.div variants={itemVariants}>
             <motion.div
@@ -251,7 +244,7 @@ const About: React.FC = () => {
                     Master of Computer Applications (MCA)
                   </h4>
                   <p className="text-blue-600 dark:text-blue-400 font-medium mb-1">Yenepoya University</p>
-                  <p className="text-gray-600 dark:text-gray-300">2023 – 2025 (Completed) | CGPA: 8.6/10</p>
+                  <p className="text-gray-600 dark:text-gray-300">2023 – 2025 | CGPA: 8.5/10</p>
                 </motion.div>
                 <motion.div
                   className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg"

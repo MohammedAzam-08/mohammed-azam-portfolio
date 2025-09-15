@@ -18,8 +18,8 @@ const Footer: React.FC = () => {
               Mohammed Azam
             </motion.h3>
             <p className="text-gray-400 mb-4">
-              Full Stack Developer passionate about creating innovative web solutions 
-              and delivering exceptional user experiences.
+              QA & Automation Tester | Full Stack Developer passionate about creating robust software solutions, automated testing frameworks, 
+              and delivering high-quality user experiences.
             </p>
             <div className="flex space-x-4">
               <motion.a
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
             <div className="space-y-2 text-gray-400">
               <p>📧 mdazam2722001@gmail.com</p>
               <p>📍 Bengaluru, India</p>
-              <p>💼 Available for opportunities</p>
+              <p>💼 Open to QA Automation, Software Testing & Full Stack Development opportunities</p>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
               >
                 <Heart size={16} fill="currentColor" />
               </motion.span>
-              using React & TypeScript
+              using React, TypeScript & QA Automation Tools
             </motion.p>
             
             <motion.p
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-sm mt-4 md:mt-0"
             >
-              Designed & Developed by Mohammed Azam
+              Designed & Developed by Mohammed Azam | QA & Automation Enthusiast
             </motion.p>
           </div>
         </div>

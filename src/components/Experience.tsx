@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const [ref, inView] = useInView({
@@ -11,41 +11,41 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      title: "Web Development Intern",
+      title: "Software Engineer Intern",
       company: "CDAC, Bengaluru",
       period: "Apr 2025 – Jun 2025",
       location: "Bengaluru, India",
       description: [
-        "Built dynamic full-stack applications using React.js, Node.js, and MySQL",
-        "Developed and optimized RESTful APIs that reduced server response latency by 30%",
-        "Integrated frontend-backend workflows, enhancing data sync and real-time rendering",
-        "Conducted unit and integration tests achieving a 90%+ pass rate in CI/CD pipelines"
+        "Automated 120+ regression and functional test cases using Selenium + TestNG, improving test efficiency by 30%.",
+        "Performed end-to-end validation aligned with SDLC & STLC, ensuring zero critical defects in release.",
+        "Integrated test automation into CI/CD pipeline with Jenkins, enhancing build verification cycles.",
+        "Collaborated with cross-functional teams to ensure high-quality software delivery."
       ],
       color: "blue"
     },
     {
-      title: "Machine Learning Intern",
-      company: "Edunet Foundation",
-      period: "Dec 2024 – Feb 2025",
+      title: "Intern",
+      company: "Edunet Foundation (TechSaksham: Microsoft & SAP)",
+      period: "Dec 2024 – Jan 2025",
       location: "Remote",
       description: [
-        "Designed a Human Pose Estimation system using TensorFlow and OpenCV",
-        "Preprocessed 10,000+ image samples to train and improve model accuracy",
-        "Improved model performance by 15% by fine-tuning hyperparameters",
-        "Delivered real-time pose recognition through webcam integration"
+        "Built a Human Pose Estimation project integrating computer vision to detect and analyze human body movements.",
+        "Executed manual and automated test cases for ML-driven workflows, reducing user-reported errors by 20%.",
+        "Validated UI and backend modules against requirements using functional and API testing.",
+        "Ensured smooth deployment and testing of AI-based workflows."
       ],
       color: "green"
     },
     {
-      title: "Software Testing Intern",
+      title: "QA Trainee",
       company: "QSpiders, Bengaluru",
-      period: "Sep 2022 – Aug 2023",
+      period: "Nov 2022 – Jul 2023",
       location: "Bengaluru, India",
       description: [
-        "Performed both manual and automated testing using Selenium WebDriver and Java",
-        "Authored over 50 test cases and detected 100+ bugs using advanced testing tools",
-        "Used TestNG framework for automation and SQL for backend data validation",
-        "Helped reduce production-level data issues by 25%"
+        "Authored and executed 100+ requirement-based test cases across regression, smoke, and UAT cycles.",
+        "Built reusable Selenium automation scripts with Git version control, ensuring maintainable testing assets.",
+        "Logged and tracked defects in defect management tools, achieving 95% on-time closure rate.",
+        "Collaborated in Agile sprints to enhance product quality and accelerate release cycles."
       ],
       color: "purple"
     }

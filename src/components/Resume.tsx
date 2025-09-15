@@ -11,7 +11,7 @@ const Resume: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Mohammed Azam.pdf';
+    link.href = '/Mohammed_Azam_Software_Quality_Engineer.pdf';
     link.download = 'Mohammed_Azam_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -104,7 +104,7 @@ const Resume: React.FC = () => {
               className="mt-12 grid md:grid-cols-3 gap-6 text-center"
             >
               <div className="p-4">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">3+</div>
+                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">1+</div>
                 <div className="text-gray-600 dark:text-gray-300">Years Experience</div>
               </div>
               <div className="p-4">

@@ -10,82 +10,84 @@ const Skills: React.FC = () => {
   });
 
   const skillCategories = [
-    {
-      title: "Programming Languages",
-      icon: <Code size={24} />,
-      skills: [
-        { name: "JavaScript", level: 90, color: "from-yellow-400 to-yellow-600" },
-        { name: "Python", level: 85, color: "from-blue-400 to-blue-600" },
-        { name: "Java", level: 80, color: "from-red-400 to-red-600" },
-        { name: "SQL", level: 85, color: "from-green-400 to-green-600" },
-        { name: "TypeScript", level: 75, color: "from-blue-500 to-blue-700" }
-      ],
-      gradient: "from-blue-500 to-cyan-500"
-    },
-    {
-      title: "Web Technologies & Frameworks",
-      icon: <Zap size={24} />,
-      skills: [
-        { name: "React.js", level: 90, color: "from-cyan-400 to-cyan-600" },
-        { name: "Node.js", level: 85, color: "from-green-400 to-green-600" },
-        { name: "Express.js", level: 85, color: "from-gray-400 to-gray-600" },
-        { name: "HTML/CSS", level: 95, color: "from-orange-400 to-orange-600" },
-        { name: "Tailwind CSS", level: 85, color: "from-teal-400 to-teal-600" },
-        { name: "Bootstrap", level: 80, color: "from-purple-400 to-purple-600" }
-      ],
-      gradient: "from-green-500 to-emerald-500"
-    },
-    {
-      title: "Data Analysis & Libraries",
-      icon: <BarChart3 size={24} />,
-      skills: [
-        { name: "Pandas", level: 80, color: "from-blue-400 to-blue-600" },
-        { name: "NumPy", level: 75, color: "from-orange-400 to-orange-600" },
-        { name: "Matplotlib", level: 75, color: "from-red-400 to-red-600" },
-        { name: "Seaborn", level: 70, color: "from-purple-400 to-purple-600" },
-        { name: "TensorFlow", level: 65, color: "from-yellow-400 to-yellow-600" },
-        { name: "Power BI", level: 75, color: "from-blue-500 to-blue-700" }
-      ],
-      gradient: "from-purple-500 to-pink-500"
-    },
-    {
-      title: "Databases & Cloud",
-      icon: <Database size={24} />,
-      skills: [
-        { name: "MySQL", level: 85, color: "from-blue-400 to-blue-600" },
-        { name: "MongoDB", level: 80, color: "from-green-400 to-green-600" },
-        { name: "PostgreSQL", level: 70, color: "from-blue-500 to-blue-700" },
-        { name: "Firebase", level: 75, color: "from-orange-400 to-orange-600" },
-        { name: "AWS Basics", level: 65, color: "from-yellow-400 to-yellow-600" }
-      ],
-      gradient: "from-indigo-500 to-purple-500"
-    },
-    {
-      title: "Testing & Automation",
-      icon: <TestTube size={24} />,
-      skills: [
-        { name: "Selenium WebDriver", level: 85, color: "from-green-400 to-green-600" },
-        { name: "TestNG", level: 80, color: "from-red-400 to-red-600" },
-        { name: "JUnit", level: 75, color: "from-blue-400 to-blue-600" },
-        { name: "Postman", level: 90, color: "from-orange-400 to-orange-600" },
-        { name: "API Testing", level: 85, color: "from-purple-400 to-purple-600" }
-      ],
-      gradient: "from-orange-500 to-red-500"
-    },
-    {
-      title: "Development Tools & DevOps",
-      icon: <Wrench size={24} />,
-      skills: [
-        { name: "Git & GitHub", level: 90, color: "from-gray-400 to-gray-600" },
-        { name: "VS Code", level: 95, color: "from-blue-400 to-blue-600" },
-        { name: "Jupyter Notebook", level: 85, color: "from-orange-400 to-orange-600" },
-        { name: "Docker", level: 70, color: "from-blue-500 to-blue-700" },
-        { name: "Excel", level: 80, color: "from-green-400 to-green-600" },
-        { name: "Linux/Ubuntu", level: 75, color: "from-purple-400 to-purple-600" }
-      ],
-      gradient: "from-gray-500 to-slate-500"
-    }
-  ];
+  {
+    title: "Testing & Automation",
+    icon: <TestTube size={24} />,
+    skills: [
+      { name: "Selenium WebDriver", level: 95, color: "from-green-400 to-green-600" },
+      { name: "Cypress", level: 85, color: "from-purple-400 to-purple-600" },
+      { name: "TestNG", level: 85, color: "from-red-400 to-red-600" },
+      { name: "JUnit", level: 80, color: "from-blue-400 to-blue-600" },
+      { name: "Postman / API Testing", level: 90, color: "from-orange-400 to-orange-600" },
+      { name: "Playwright", level: 75, color: "from-pink-400 to-pink-600" }
+    ],
+    gradient: "from-orange-500 to-red-500"
+  },
+  {
+    title: "Programming & Scripting",
+    icon: <Code size={24} />,
+    skills: [
+      { name: "JavaScript", level: 85, color: "from-yellow-400 to-yellow-600" },
+      { name: "Python", level: 90, color: "from-blue-400 to-blue-600" },
+      { name: "Java", level: 85, color: "from-red-400 to-red-600" },
+      { name: "SQL", level: 80, color: "from-green-400 to-green-600" },
+      { name: "TypeScript", level: 75, color: "from-blue-500 to-blue-700" }
+    ],
+    gradient: "from-blue-500 to-cyan-500"
+  },
+  {
+    title: "Automation Tools & DevOps",
+    icon: <Wrench size={24} />,
+    skills: [
+      { name: "Git & GitHub", level: 90, color: "from-gray-400 to-gray-600" },
+      { name: "Jenkins / CI-CD", level: 80, color: "from-red-400 to-red-600" },
+      { name: "Docker", level: 70, color: "from-blue-500 to-blue-700" },
+      { name: "Jira / TestRail", level: 85, color: "from-purple-400 to-purple-600" },
+      { name: "VS Code", level: 95, color: "from-blue-400 to-blue-600" },
+      { name: "Linux/Ubuntu", level: 75, color: "from-green-400 to-green-600" }
+    ],
+    gradient: "from-gray-500 to-slate-500"
+  },
+  {
+    title: "Web Technologies & Frameworks",
+    icon: <Zap size={24} />,
+    skills: [
+      { name: "React.js", level: 85, color: "from-cyan-400 to-cyan-600" },
+      { name: "Node.js", level: 80, color: "from-green-400 to-green-600" },
+      { name: "Express.js", level: 80, color: "from-gray-400 to-gray-600" },
+      { name: "HTML/CSS", level: 90, color: "from-orange-400 to-orange-600" },
+      { name: "Tailwind CSS", level: 80, color: "from-teal-400 to-teal-600" },
+      { name: "Bootstrap", level: 75, color: "from-purple-400 to-purple-600" }
+    ],
+    gradient: "from-green-500 to-emerald-500"
+  },
+  {
+    title: "Databases & Cloud",
+    icon: <Database size={24} />,
+    skills: [
+      { name: "MySQL", level: 85, color: "from-blue-400 to-blue-600" },
+      { name: "MongoDB", level: 75, color: "from-green-400 to-green-600" },
+      { name: "PostgreSQL", level: 70, color: "from-blue-500 to-blue-700" },
+      { name: "Firebase", level: 70, color: "from-orange-400 to-orange-600" },
+      { name: "AWS Basics", level: 65, color: "from-yellow-400 to-yellow-600" }
+    ],
+    gradient: "from-indigo-500 to-purple-500"
+  },
+  {
+    title: "Data Analysis & Reporting",
+    icon: <BarChart3 size={24} />,
+    skills: [
+      { name: "Excel / Advanced Formulas", level: 85, color: "from-green-400 to-green-600" },
+      { name: "Pandas", level: 75, color: "from-blue-400 to-blue-600" },
+      { name: "NumPy", level: 70, color: "from-orange-400 to-orange-600" },
+      { name: "Matplotlib / Seaborn", level: 70, color: "from-red-400 to-red-600" },
+      { name: "Power BI", level: 70, color: "from-blue-500 to-blue-700" },
+      { name: "Test Reports / Analytics", level: 80, color: "from-purple-400 to-purple-600" }
+    ],
+    gradient: "from-purple-500 to-pink-500"
+  }
+];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },

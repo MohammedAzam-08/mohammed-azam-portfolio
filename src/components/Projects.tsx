@@ -10,71 +10,136 @@ const Projects: React.FC = () => {
   });
 
   const projects = [
-    {
-      title: "Human Pose Estimation System",
-      description: "A Machine Learning project developed during internship using TensorFlow and OpenCV for real-time human pose detection and analysis. Achieved 92% accuracy in pose estimation with optimized model performance for image processing applications.",
-      features: [
-        "Real-time human pose detection using TensorFlow",
-        "Computer vision implementation with OpenCV",
-        "92% model accuracy with optimized performance",
-        "Processed 10K+ images for training and validation"
-      ],
-      technologies: ["Python", "TensorFlow", "OpenCV", "NumPy", "Pandas", "Matplotlib"],
-      icon: <Sparkles className="text-purple-600" size={24} />,
-      color: "purple",
-      gradient: "from-purple-500 to-pink-500",
-      githubUrl: "https://github.com/MohammedAzam-08/Human-Pose-Estimation",
-      liveUrl: ""
-    },
-    {
-      title: "EduMate – Course Management System",
-      description: "A comprehensive MERN stack platform for online learning with user authentication, instructor dashboard, and student progress tracking. Improved engagement through dynamic course modules and real-time data visualization using Chart.js.",
-      features: [
-        "Secure JWT-based authentication and authorization",
-        "Real-time data visualization using Chart.js",
-        "Dynamic course modules with progress tracking",
-        "Responsive design with modern UI/UX"
-      ],
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Chart.js", "JWT"],
-      icon: <Code className="text-blue-600" size={24} />,
-      color: "blue",
-      gradient: "from-blue-500 to-cyan-500",
-      githubUrl: "https://github.com/MohammedAzam-08/EduMate",
-      liveUrl: ""
-    },
-    {
-      title: "Examify – Tablet Exam Portal",
-      description: "A React.js + Node.js portal with timer-based auto-submission, real-time result analytics, and question bank management. Successfully used by 100+ users across multiple exam sessions with tablet optimization.",
-      features: [
-        "Timer-based auto-submission system",
-        "Advanced question bank management",
-        "Real-time result analytics and reporting",
-        "Tablet-optimized responsive design"
-      ],
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Socket.io"],
-      icon: <Database className="text-green-600" size={24} />,
-      color: "green", 
-      gradient: "from-green-500 to-emerald-500",
-      githubUrl: "https://github.com/MohammedAzam-08/Examify",
-      liveUrl: ""
-    },
-    {
-      title: "Digital Asset Management System",
-      description: "A secure web application using MongoDB, Express.js, and JWT-based authentication for uploading, categorizing, and managing digital files (images/docs). Features include role-based access control and file previews.",
-      features: [
-        "JWT-based authentication system",
-        "Role-based access control (RBAC)",
-        "File upload with categorization",
-        "Real-time file previews and management"
-      ],
-      technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Multer"],
-      icon: <Shield className="text-purple-600" size={24} />,
-      color: "purple",
-      gradient: "from-purple-500 to-pink-500",
-      githubUrl: "https://github.com/MohammedAzam-08/Digital-Asset-Management",
-      liveUrl: ""
-    }
-  ];
+  {
+    title: "AI-Driven NLP to SQL Query and Visualization",
+    description: "An AI-powered system that converts natural language queries into SQL statements and visualizes the results. Users can interact with databases without writing SQL manually.",
+    features: [
+      "Converts natural language to SQL queries",
+      "Visualizes query results with interactive charts",
+      "Admin panel for managing configurations and viewing analytics",
+      "Built with Flask, MySQL, and modern front-end libraries"
+    ],
+    technologies: ["Python", "Flask", "MySQL", "HTML", "CSS", "JavaScript"],
+    icon: <Code className="text-blue-600" size={24} />,
+    color: "blue",
+    gradient: "from-blue-500 to-cyan-500",
+    githubUrl: "https://github.com/MohammedAzam-08/AI-Driven-NLP-to-SQL-Query-and-Visualization",
+    liveUrl: ""
+  },
+  {
+    title: "Examify – Tablet Exam Portal",
+    description: "A React.js + Node.js portal with timer-based auto-submission, real-time result analytics, and question bank management. Successfully used by 100+ users across multiple exam sessions with tablet optimization.",
+    features: [
+      "Timer-based auto-submission system",
+      "Advanced question bank management",
+      "Real-time result analytics and reporting",
+      "Tablet-optimized responsive design"
+    ],
+    technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Socket.io"],
+    icon: <Database className="text-green-600" size={24} />,
+    color: "green",
+    gradient: "from-green-500 to-emerald-500",
+    githubUrl: "https://github.com/MohammedAzam-08/Examify",
+    liveUrl: ""
+  },
+  {
+    title: "Human Pose Estimation System",
+    description: "A Machine Learning project developed during internship using TensorFlow and OpenCV for real-time human pose detection and analysis. Achieved 92% accuracy in pose estimation.",
+    features: [
+      "Real-time human pose detection using TensorFlow",
+      "Computer vision implementation with OpenCV",
+      "92% model accuracy with optimized performance",
+      "Processed 10K+ images for training and validation"
+    ],
+    technologies: ["Python", "TensorFlow", "OpenCV", "NumPy", "Pandas", "Matplotlib"],
+    icon: <Sparkles className="text-purple-600" size={24} />,
+    color: "purple",
+    gradient: "from-purple-500 to-pink-500",
+    githubUrl: "https://github.com/MohammedAzam-08/Human-Pose-Estimation",
+    liveUrl: ""
+  },
+  {
+    title: "Smart Waste Management System",
+    description: "A scalable full-featured application that digitizes municipal waste complaint management — from citizen reporting to worker verification.",
+    features: [
+      "Complaint reporting with photos & Google Maps location",
+      "JWT-based authentication and role-based access control",
+      "Worker assignment system managed by agents",
+      "Real-time notifications and analytics dashboard"
+    ],
+    technologies: ["React.js", "TypeScript", "Node.js", "Spring Boot", "MySQL", "SQLite", "Tailwind CSS"],
+    icon: <Shield className="text-yellow-600" size={24} />,
+    color: "yellow",
+    gradient: "from-yellow-400 to-yellow-600",
+    githubUrl: "https://github.com/MohammedAzam-08/Smart-Waste-Management-System",
+    liveUrl: ""
+  },
+  {
+    title: "Expense Tracker – Smart Finance App",
+    description: "A full-stack personal finance management system enabling users to track expenses, manage bills, and gain insights using ML predictions.",
+    features: [
+      "User authentication and account management (JWT-secured)",
+      "Add, categorize, and update personal expenses",
+      "Recurring bill management with reminders",
+      "Visualize spending trends and ML-based predictions"
+    ],
+    technologies: ["Node.js", "Express.js", "PostgreSQL", "Python", "JavaScript", "Firebase"],
+    icon: <Code className="text-indigo-600" size={24} />,
+    color: "indigo",
+    gradient: "from-indigo-500 to-purple-500",
+    githubUrl: "https://github.com/MohammedAzam-08/Expense-Tracker",
+    liveUrl: ""
+  },
+  {
+    title: "Crowd-Funding Web3 dApp",
+    description: "A decentralized crowdfunding platform using Next.js, TypeScript, Thirdweb SDK, and Solidity, enabling blockchain-backed fundraising campaigns.",
+    features: [
+      "Wallet authentication via MetaMask",
+      "Create & view campaigns with metadata stored on IPFS",
+      "Crypto contributions using smart contracts",
+      "Next.js + Tailwind responsive frontend"
+    ],
+    technologies: ["Next.js", "TypeScript", "Thirdweb SDK", "Solidity", "Tailwind CSS", "React.js"],
+    icon: <Sparkles className="text-pink-600" size={24} />,
+    color: "pink",
+    gradient: "from-pink-500 to-rose-500",
+    githubUrl: "https://github.com/MohammedAzam-08/Crowd-Funding-Web3",
+    liveUrl: ""
+  },
+  {
+    title: "EduMate – Course Management System",
+    description: "A comprehensive MERN stack platform for online learning with user authentication, instructor dashboard, and student progress tracking.",
+    features: [
+      "Secure JWT-based authentication and authorization",
+      "Real-time data visualization using Chart.js",
+      "Dynamic course modules with progress tracking",
+      "Responsive design with modern UI/UX"
+    ],
+    technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Chart.js", "JWT"],
+    icon: <Code className="text-blue-600" size={24} />,
+    color: "blue",
+    gradient: "from-blue-500 to-cyan-500",
+    githubUrl: "https://github.com/MohammedAzam-08/EduMate",
+    liveUrl: ""
+  },
+  {
+    title: "Digital Asset Management System",
+    description: "A secure web application for uploading, categorizing, and managing digital files with role-based access and previews.",
+    features: [
+      "JWT-based authentication system",
+      "Role-based access control (RBAC)",
+      "File upload with categorization",
+      "Real-time file previews and management"
+    ],
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Multer"],
+    icon: <Shield className="text-purple-600" size={24} />,
+    color: "purple",
+    gradient: "from-purple-500 to-pink-500",
+    githubUrl: "https://github.com/MohammedAzam-08/Digital-Asset-Management",
+    liveUrl: ""
+  }
+];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },

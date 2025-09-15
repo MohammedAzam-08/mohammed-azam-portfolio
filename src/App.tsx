@@ -46,21 +46,21 @@ function App() {
                   <motion.div
                     className="w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl mx-auto"
                     whileHover={{ rotate: 360 }}
-                    animate={{ 
+                    animate={{
                       boxShadow: [
                         "0 0 20px rgba(59, 130, 246, 0.3)",
                         "0 0 40px rgba(147, 51, 234, 0.3)",
                         "0 0 20px rgba(59, 130, 246, 0.3)"
                       ]
                     }}
-                    transition={{ 
+                    transition={{
                       boxShadow: { duration: 2, repeat: Infinity },
                       rotate: { duration: 0.6 }
                     }}
                   >
                     <span className="text-white font-bold text-2xl">MA</span>
                   </motion.div>
-                  
+
                   {/* Floating particles */}
                   {[...Array(6)].map((_, i) => (
                     <motion.div
@@ -70,12 +70,12 @@ function App() {
                         left: `${Math.cos(i * 60 * Math.PI / 180) * 60 + 50}%`,
                         top: `${Math.sin(i * 60 * Math.PI / 180) * 60 + 50}%`,
                       }}
-                      animate={{ 
+                      animate={{
                         scale: [0, 1, 0],
                         opacity: [0, 1, 0]
                       }}
-                      transition={{ 
-                        duration: 2, 
+                      transition={{
+                        duration: 2,
                         repeat: Infinity,
                         delay: i * 0.2
                       }}
@@ -83,7 +83,7 @@ function App() {
                   ))}
                 </motion.div>
 
-                {/* Loading text */}
+                {/* Updated Loader Content */}
                 <motion.h1
                   className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4"
                   initial={{ opacity: 0, y: 20 }}
@@ -92,14 +92,14 @@ function App() {
                 >
                   Mohammed Azam
                 </motion.h1>
-                
+
                 <motion.p
                   className="text-gray-600 dark:text-gray-300 mb-8"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
                 >
-                  IT Professional
+                  Software Quality Engineer | Full-Stack Developer | AI/ML Enthusiast
                 </motion.p>
 
                 {/* Enhanced Loading Spinner */}
@@ -125,15 +125,14 @@ function App() {
                     transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
                   />
                 </motion.div>
-                
-                {/* Loading progress */}
+
                 <motion.div
                   className="mt-8 text-sm text-gray-500 dark:text-gray-400"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 1.1 }}
                 >
-                  Crafting amazing experiences...
+                  Delivering high-quality software through Testing, Automation, and AI-driven Development...
                 </motion.div>
               </div>
             </motion.div>
