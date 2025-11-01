@@ -176,7 +176,7 @@ const skills = [
       <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Development & AI</h3>
     </motion.div>
     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-      Skilled in full-stack development using <span className="font-semibold text-blue-600 dark:text-blue-400">React.js, Node.js, MongoDB</span>, 
+      Skilled in full-stack development using <span className="font-semibold text-blue-600 dark:text-blue-400">MERN Stack</span>, 
       with hands-on experience in <span className="font-semibold text-purple-600 dark:text-purple-400">AI/ML-powered applications</span> 
       and computer vision projects. Implemented intelligent solutions using TensorFlow and OpenCV, building scalable and data-driven web apps.
     </p>

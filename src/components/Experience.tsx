@@ -37,7 +37,7 @@ const Experience: React.FC = () => {
       color: "green"
     },
     {
-      title: "QA Trainee",
+      title: "Software Testing Trainee",
       company: "QSpiders, Bengaluru",
       period: "Nov 2022 – Jul 2023",
       location: "Bengaluru, India",
