@@ -177,8 +177,10 @@ const skills = [
     </motion.div>
     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
       Skilled in full-stack development using <span className="font-semibold text-blue-600 dark:text-blue-400">MERN Stack</span>, 
-      with hands-on experience in <span className="font-semibold text-purple-600 dark:text-purple-400">AI/ML-powered applications</span> 
-      and computer vision projects. Implemented intelligent solutions using TensorFlow and OpenCV, building scalable and data-driven web apps.
+      <span className="font-semibold text-orange-600 dark:text-orange-400">Java with Spring Boot</span>, and proficient in 
+      <span className="font-semibold text-green-600 dark:text-green-400">Python with frameworks like Flask and Django</span>. 
+      Experienced in <span className="font-semibold text-purple-600 dark:text-purple-400">AI/ML-powered applications</span> 
+      and computer vision projects. Implemented intelligent solutions using TensorFlow, OpenCV, and Python libraries, building scalable and data-driven web applications.
     </p>
   </motion.div>
 

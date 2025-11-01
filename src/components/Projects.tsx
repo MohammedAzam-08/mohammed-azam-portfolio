@@ -137,6 +137,22 @@ const Projects: React.FC = () => {
     gradient: "from-purple-500 to-pink-500",
     githubUrl: "https://github.com/MohammedAzam-08/Digital-Asset-Management",
     liveUrl: ""
+  },
+  {
+    title: "Stockwise – Inventory Management System",
+    description: "A comprehensive business inventory solution with real-time analytics built on Spring Boot backend and React frontend. Delivers automated stock management and enterprise-grade security.",
+    features: [
+      "Real-time inventory tracking and analytics dashboard",
+      "JWT-based authentication with role-based access control",
+      "Automated stock alerts and supplier management",
+      "Transaction history with sales and purchase reporting"
+    ],
+    technologies: ["Spring Boot", "Java", "React.js", "MySQL", "JWT", "Tailwind CSS", "Recharts", "Maven"],
+    icon: <Database className="text-orange-600" size={24} />,
+    color: "orange",
+    gradient: "from-orange-500 to-red-500",
+    githubUrl: "https://github.com/MohammedAzam-08/Stockwise-Inventory-System",
+    liveUrl: ""
   }
 ];
 
@@ -205,7 +221,7 @@ const Projects: React.FC = () => {
               transition={{ duration: 1, delay: 0.5 }}
             />
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Here are some of my recent projects that showcase my skills in AI/ML, full-stack development, and modern web technologies.
+              Here are some of my recent projects that showcase my skills in AI/ML, full-stack development with Java/Spring Boot, Python frameworks, and modern web technologies.
             </p>
           </motion.div>
 

@@ -99,7 +99,7 @@ function App() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
                 >
-                  Software Quality Engineer | Full-Stack Developer | AI/ML Enthusiast
+                  Software Engineer | Testing & QA Specialist | Full-Stack Developer | AI/ML Enthusiast
                 </motion.p>
 
                 {/* Enhanced Loading Spinner */}
@@ -132,7 +132,7 @@ function App() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 1.1 }}
                 >
-                  Delivering high-quality software through Testing, Automation, and AI-driven Development...
+                  Delivering high-quality software through comprehensive Testing, QA Automation, Full-Stack Development, and AI-driven Solutions...
                 </motion.div>
               </div>
             </motion.div>

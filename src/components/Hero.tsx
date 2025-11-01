@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
     whileHover={{ scale: 1.02 }}
     transition={{ type: "spring", stiffness: 300 }}
   >
-    SDET 
+    Software Engineer
   </motion.span>
   <motion.span
     className="block bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent animate-gradient"
@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
     whileHover={{ scale: 1.02 }}
     transition={{ type: "spring", stiffness: 300 }}
   >
-    Software Development Engineer in Test
+    {/* Software Development Engineer in Test */}
   </motion.span>
 </motion.h1>
 
@@ -145,8 +145,8 @@ const Hero: React.FC = () => {
         >
           <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 mr-1.5 sm:mr-2" />
           <span className="text-gray-700 dark:text-gray-300 font-medium text-sm sm:text-base">
-            <span className="hidden sm:inline">Shivamogga, Karnataka, India</span>
-            <span className="sm:hidden">Shivamogga, India</span>
+            <span className="hidden sm:inline">Bengaluru, Karnataka, India</span>
+            <span className="sm:hidden">Bengaluru, India</span>
           </span>
         </motion.div>
       </motion.div>
@@ -182,7 +182,14 @@ const Hero: React.FC = () => {
           Tech Stack
         </motion.h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3">
-          {['JavaScript', 'React.js', 'Node.js', 'Python', 'TensorFlow', 'OpenCV', 'MongoDB', 'MySQL', 'Jest', 'Cypress'].map((tech, index) => (
+          {[
+            'JavaScript', 'TypeScript', 'React.js', 'Node.js', 'Express.js', 'Next.js',
+            'Python', 'Flask', 'Django', 'FastAPI', 'Spring Boot', 'Java',
+            'TensorFlow', 'OpenCV', 'Pandas', 'NumPy', 'Scikit-learn',
+            'MongoDB', 'MySQL', 'PostgreSQL', 'Redis', 'Firebase',
+            'Docker', 'Git', 'AWS', 'Vercel', 'Postman',
+            'Jest', 'Cypress', 'JUnit', 'Selenium', 'Tailwind CSS'
+          ].map((tech, index) => (
             <motion.span
               key={tech}
               className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg text-xs sm:text-sm font-medium border border-gray-200 dark:border-gray-700 text-center shadow-sm hover:shadow-md transition-all duration-300"

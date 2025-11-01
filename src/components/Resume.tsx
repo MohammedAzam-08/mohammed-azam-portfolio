@@ -11,7 +11,7 @@ const Resume: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Mohammed_Azam_Software_Quality_Engineer.pdf';
+    link.href = '/Mohammed Azam.pdf';
     link.download = 'Mohammed_Azam_Resume.pdf';
     document.body.appendChild(link);
     link.click();
